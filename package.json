@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/annisyadira/capstone-project-sanctuary#readme",
   "dependencies": {
-    "mysql": "^2.18.1",
+    "express": "^4.17.1",
     "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
