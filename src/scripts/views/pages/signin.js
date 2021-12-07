@@ -18,10 +18,10 @@ const SignIn = {
 
         window.addEventListener("load", function(){
             if (typeof(Storage) !== "undefined") {
-                console.log('Web Browser supported!');
+                console.log('Web Browser didukung!');
             }
             else {
-                alert('The browser you are using does not support Web Storage')
+                alert('Browser yang anda gunakan tidak mendukung Penyimpanan Web')
             }
         });
 
@@ -34,7 +34,7 @@ const SignIn = {
         if (userData.find((username) => {
             return username.username !== usernameInput;
         })) {
-            alert('Wrong username. Try again.');
+            alert('Usename salah. Coba lagi.');
             event.preventDefault();
             event.stopPropagation();
         }
@@ -43,14 +43,14 @@ const SignIn = {
         if (userData.find((password) => {
             return password.password !== passwordInput;
         })) {
-            alert('Wrong password. Try again.');
+            alert('Password salah. Coba lagi.');
             event.preventDefault();
             event.stopPropagation();
         }
 
         //cek kombinasi username & password
         if (userData.indexOf(usernameInput) !== userData.indexOf(passwordInput)) {
-            alert('Enter the correct password and username combination. Try again.');
+            alert('Masukkan kombinasi password dan username yang benar. Coba lagi.');
             event.preventDefault();
             event.stopPropagation();
         }
@@ -65,7 +65,7 @@ const SignIn = {
                 localStorage.setItem(UserSignedInKey, JSON.stringify(getCredential))
             }
             
-            alert('Sign in success!');
+            alert('Berhasil masuk!');
             location.replace('#/writeYourStory');
         }
     }

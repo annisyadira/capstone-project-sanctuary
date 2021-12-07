@@ -33,19 +33,19 @@ const SignUp = {
 
         if (userData.forEach((email) => 
         email.email === document.querySelector('#emailInput').value)) {
-            alert('Email is already taken. Try another email.');
+            alert('E-mail sudah terdaftar. Coba e-mail lain.');
             event.preventDefault();
             event.stopPropagation();
 
         } if (userData.forEach((username) =>
         username.username === document.querySelector('#usernameInput').value)) {
-            alert('Username is already taken. Try another username.');
+            alert('Username sudah terdaftar. Coba username lain');
             event.preventDefault();
             event.stopPropagation();
 
         } else {
             userData.push(credential);
-            alert('Account created!');
+            alert('Akun berhasil dibuat!');
             location.replace('#/signin');
         }
     }
