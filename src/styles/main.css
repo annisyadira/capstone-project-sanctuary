@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #E4CDA7;
+}
+
+a {
+    text-decoration: none;
+    color: #C3B091;
+}
+
+a:hover {
+    color: #E4CDA7;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+/*--Main--*/
+.feeds {
+    padding: 0 1rem;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #99A799;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #533535;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #919191;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+/*Locator*/
+
+/*Learn-more*/
+.learn-more .content h3 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #533535;
+}
+
+.learn-more .content p {
+    margin-left: 2rem;
+}
+
+.learn-more .content ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem;
+}
+.learn-more .content ul li {
+    padding-bottom: 10px;
+    font-style: italic;
+}
+.learn-more .content ul i {
+    font-size: 20px;
+    color: #533535;
+}
+.learn-more .content p:last-child {
+    margin-bottom: 0;
+} 
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.learn-more .btn-go-to {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #6B4F4F;
+    text-transform: uppercase; 
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.learn-more .btn-go-to:hover {
+    background: #533535;
+}
+
+
+/*their-stories*/
+.their-stories .content h3 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #533535;
+}
+
+.their-stories .content p {
+    margin-left: 2rem;
+}
+
+.their-stories .btn-go-to {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #6B4F4F;
+    text-transform: uppercase; 
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.their-stories .btn-go-to:hover {
+    background: #533535;
+}
+  

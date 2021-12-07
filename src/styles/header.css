@@ -1,0 +1,214 @@
+#header {
+    background: #6B4F4F;
+    transition: all 0.5s;
+    z-index: 997;
+    height: 75px;
+}
+
+.d-flex {
+    display: flex !important;
+    align-items: center;
+}
+
+
+/*#header.header-scrolled {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+} u/ index.js*/
+
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*.scrolled-offset {
+    margin-top: 70px;
+} untuk di index.js*/
+
+/*--navbar*--*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    color: #FFE6BC;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #fff;
+}
+
+/*Sign In*/
+.navbar .signin, .navbar .signin:focus {
+    color: #FFE6BC;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 2px solid #FFE6BC;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.navbar .signin:hover, .navbar .signin:focus:hover {
+    background: #FFE6BC;
+    color: #6B4F4F;
+  }
+
+/*Sign Up*/
+.navbar .signup, .navbar .signup:focus {
+    color: #FFE6BC;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 2px solid #FFE6BC;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.navbar .signup:hover, .navbar .signup:focus:hover {
+    background: #FFE6BC;
+    color: #6B4F4F;
+}
+
+.mobile-nav-toggle {
+    color: #FFE6BC;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+
+/*.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(9, 9, 9, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #222222;
+  }
+  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #5cb874;
+  } saat index.js udah jadi*/
+
+/*--Hero--*/
+#hero {
+    width: 100%;
+    height: 60vh;
+    background: url("../public/images/heros/slide1.jpg") center;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(56, 64, 70, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container {
+    z-index: 2;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero h1 span {
+    border-bottom: 4px solid #E2C2B9;
+}
+
+#hero p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#hero .btn-read-more {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #6B4F4F;
+    background: #E2C2B9;
+    text-transform: uppercase; 
+}
+
+#hero .btn-read-more:hover {
+    background: #FFE6BC;
+}
