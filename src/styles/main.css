@@ -23,6 +23,14 @@ h1, h2, h3 {
     font-family: "Raleway", sans-serif;
 }
 
+.container {
+    width: 100%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*--Main--*/
 .feeds {
     padding: 0 1rem;
