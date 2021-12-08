@@ -4,9 +4,9 @@ import data from '../../data/DATA.json';
 const Story = {
     async render() {
         return `
-        <h3>THEIR STORIES</h3>
-        <p>Be a part of the community. Read inspiring stories about people who have been ddealing with mental illness. You can even write your own story!<p>
-        <div id='content'></div>
+        <h3 class='title'>KISAH</h3>
+        <p class='sub-title'>Jadilah bagian dari komunitas kami. Baca kisah inspiratif perjuangan orang-orang</br>melawan penyakit mental. Anda bahkan dapat menulis cerita Anda sendiri!<p>
+        <div id='content' class='container'></div>
         `;
     },
     async afterRender() {

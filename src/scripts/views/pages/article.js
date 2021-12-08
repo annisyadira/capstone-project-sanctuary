@@ -4,9 +4,9 @@ import data from '../../data/DATA.json';
 const Article = {
     async render() {
         return `
-        <h3>LEARN MORE</h3>
-        <p>Know more about the importance of keeping your mental healthy, early signs of mental illness, how to cope with mental illness, and more!<p>
-        <div id='content'></div>
+        <h3 class='title'>ARTIKEL</h3>
+        <p class='sub-title'>Ketahui lebih banyak tentang pentingnya menjaga kesehatan mental,</br>tanda-tanda awal penyakit mental, cara mengatasi penyakit mental, dan masih banyak lagi!<p>
+        <div id='content' class='container'></div>
         `;
     },
     async afterRender() {

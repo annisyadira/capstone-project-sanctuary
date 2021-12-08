@@ -1,25 +1,21 @@
 const createArticleItem = (article) => `
     <article class='item'>
-        <h3>${article.title}</h3>
-        <p>
-            ${article.content}
-            <a href='#/Story-Detail'>Baca Selengkapnya.</a>
-        </p>
+        <h3 id='item-title'>${article.title}</h3>
+        <p>${article.content}</p>
+        <a href='#/Story-Detail'>Baca Selengkapnya.</a>
     </article>
 `;
 
 const createStoryItem = (story) => `
     <article class='item'>
-        <h3>${story.title}</h3>
-        <p>
-            ${story.content}
-            <a href='#/Story-Detail'>Baca Selengkapnya.</a>
-        </p>
+        <h3 class='item-title'>${story.title}</h3>
+        <p>${story.content}</p>
+        <a href='#/Story-Detail'>Baca Selengkapnya.</a>
     </article>
 `;
 
 const createInputStory = () => `
-    <h3>TULIS DAN BAGIKAN CERITAMU</h3>
+    <h3 class='title'>TULIS DAN BAGIKAN CERITAMU</h3>
     <div>
         <input type='string' id='addTitle' placeholder='Judul' required>
         <input type='string' id='addContent' placeholder='Isi' required>
@@ -28,7 +24,7 @@ const createInputStory = () => `
 `;
 
 const createSignIn = () => `
-    <h3>MASUK</h3>
+    <h3 class='title'>MASUK</h3>
     <div>
         <h4>username</h4>
         <input type='string' id='usernameInput' placeholder='username' required>
@@ -40,7 +36,7 @@ const createSignIn = () => `
 `;
 
 const createSignUp = () => `
-    <h3>DAFTAR</h3>
+    <h3 class='title'>DAFTAR</h3>
     <div>
         <h4>e-mail</h4>
         <input type='string' id='emailInput' placeholder='e-mail' required>
