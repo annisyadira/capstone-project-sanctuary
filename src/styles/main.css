@@ -1,4 +1,8 @@
-*{
+html {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -180,4 +184,79 @@ section {
 .their-stories .btn-go-to:hover {
     background: #533535;
 }
+
+/*About Us*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
   
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    margin-top: 2rem;
+    background-color: #C3B091;
+}
+
+.card img {
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+  
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #6B4F4F;
+    color: white;
+}
+  
+h2 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: #533535;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.about-section .container {
+    padding: 0 16px;
+}
+  
+.about-section .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 1rem;
+    color: #fff;
+    background-color: #6B4F4F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #533535;
+    color: #fff;
+}
