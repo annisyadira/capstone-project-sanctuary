@@ -2,15 +2,15 @@ import { createInputStory } from '../templates/template-creator';
 import data from '../../data/DATA.json';
 import SignInCheck from '../../utils/signInChecker';
 
+SignInCheck.init();
+
 const WriteStory = {
     async render() {
         return `
-        <div id='content'></div>
+        <div id='content' class='container'></div>
         `;
     },
-    async afterRender() {
-        SignInCheck.init();
-
+    async afterRender() { 
         const container = document.querySelector('#content');
         container.innerHTML = createInputStory();
 
