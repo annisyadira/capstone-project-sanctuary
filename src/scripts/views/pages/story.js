@@ -14,7 +14,7 @@ const Story = {
         const container = document.querySelector('#content');
 
         stories.forEach((story) => {
-            container += createStoryItem(story);
+            container.innerHTML += createStoryItem(story);
         });
     },
 }

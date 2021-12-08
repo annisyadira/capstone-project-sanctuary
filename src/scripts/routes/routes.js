@@ -1,5 +1,5 @@
 import SignUp from '../views/pages/signup';
-import SignIn from '../views/pages/signin';
+import { SignIn } from '../views/pages/signin';
 import Article from '../views/pages/article';
 import Story from '../views/pages/story';
 import WriteStory from '../views/pages/writestory';
@@ -9,7 +9,7 @@ const routes = {
   '/signin': SignIn,
   '/article': Article,
   '/story': Story,
-  '/writeYourStory': WriteStory
+  '/writestory': WriteStory
 };
 
 export default routes;

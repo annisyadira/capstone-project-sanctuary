@@ -1,3 +1,5 @@
+import { UserSignedInKey } from '../views/pages/signin';
+
 const SignInCheck = {
     init() {
         window.addEventListener('load', this._checkInLocalStorage)

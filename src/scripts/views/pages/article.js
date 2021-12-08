@@ -14,7 +14,7 @@ const Article = {
         const container = document.querySelector('#content');
 
         articles.forEach((article) => {
-            container += createArticleItem(article);
+            container.innerHTML += createArticleItem(article);
         });
     },
 }

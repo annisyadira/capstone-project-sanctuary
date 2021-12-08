@@ -2,8 +2,7 @@ import { createSignIn } from '../templates/template-creator';
 import data from '../../data/DATA.json';
 
 const userData = data[2].user;
-const usernameInput = document.querySelector('#usernameInput').value;
-const passwordInput = document.querySelector('#passwordInput').value;
+const UserSignedInKey = 'USER_SIGNED_IN';
 
 const SignIn = {
     async render() {
@@ -30,6 +29,9 @@ const SignIn = {
     },
 
     async checkInput(event) {
+        const usernameInput = document.querySelector('#usernameInput').value;
+        const passwordInput = document.querySelector('#passwordInput').value;
+
         //cek username
         if (userData.find((username) => {
             return username.username !== usernameInput;
@@ -56,7 +58,6 @@ const SignIn = {
         }
         
         else {
-            const UserSignedInKey = 'USER_SIGNED_IN';
             const userCredential = userData.indexOf(usernameInput);
             const getCredential = userData[userCredential];
             
@@ -71,4 +72,4 @@ const SignIn = {
     }
 };
 
-export default SignIn;
+export { SignIn, UserSignedInKey };

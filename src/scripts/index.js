@@ -6,7 +6,7 @@ import '../styles/responsive.css';
 import App from './views/app';
 
 const app = new App({
-  button: document.querySelector('#hamburger'),
+  button: document.querySelector('.mobile-nav-toggle'), // nanti ini untuk hamburger button
   drawer: document.querySelector('#navbar'),
   content: document.querySelector('#maincontent'),
 });
@@ -14,7 +14,8 @@ const app = new App({
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });
-
+ /*
 window.addEventListener('load', () => {
   app.renderPage();
 });
+*/

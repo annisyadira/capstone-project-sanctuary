@@ -2,8 +2,6 @@ import { createInputStory } from '../templates/template-creator';
 import data from '../../data/DATA.json';
 import SignInCheck from '../../utils/signInChecker';
 
-SignInCheck.init();
-
 const WriteStory = {
     async render() {
         return `
@@ -11,8 +9,10 @@ const WriteStory = {
         `;
     },
     async afterRender() {
+        SignInCheck.init();
+
         const container = document.querySelector('#content');
-        container = createInputStory();
+        container.innerHTML = createInputStory();
 
         const submit = document.querySelector('#submitBtn');
         submit.addEventListener('click', this.addNewStory);
