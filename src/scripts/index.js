@@ -1,4 +1,5 @@
 import 'regenerator-runtime';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.css';
 import '../styles/footer.css';
 import '../styles/header.css';
@@ -14,8 +15,7 @@ const app = new App({
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });
- /*
+
 window.addEventListener('load', () => {
   app.renderPage();
 });
-*/
