@@ -6,12 +6,12 @@ const userData = data[2].user;
 const SignUp = {
     async render() {
         return `
-        <div id='content'></div>
+        <div id='sign-content' class='container'></div>
         `;
     },
 
     async afterRender() {
-        const container = document.querySelector('#content');
+        const container = document.querySelector('#sign-content');
         container.innerHTML += createSignUp();
 
         const submit = document.querySelector('#submitBtn');

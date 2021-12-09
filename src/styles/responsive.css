@@ -3,6 +3,12 @@
       flex: 0 0 auto;
       width: 50%;
   }
+
+  #content {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6%;
+    padding-left: 3%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -12,6 +18,12 @@
 
   .navbar ul {
     display: none;
+  }
+
+  #content {
+    grid-template-columns: repeat(1);
+    padding-bottom: 6%;
+    padding-left: 3%;
   }
 }
 
