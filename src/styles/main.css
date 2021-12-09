@@ -31,8 +31,6 @@ h1, h2, h3, p {
 
 .container {
     width: 100%;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -104,6 +102,7 @@ section {
 
 .sub-title {
     text-align: center;
+    margin-bottom: 2%;
 }
 
 #content {
@@ -121,6 +120,7 @@ section {
     font-size: larger;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: justify;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
@@ -133,6 +133,11 @@ section {
 }
 .item > a:hover {
     color: #533535;
+}
+
+#writestory {
+    padding: 1%;
+    display: block;
 }
 
 /*Locator*/
@@ -331,6 +336,7 @@ p {
 #submitBtn {
     margin: 0 auto;
     display: block;
+    
 }
 
 .switch > a:hover {

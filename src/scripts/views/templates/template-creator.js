@@ -29,7 +29,7 @@ const createSignIn = () => `
         <h4>username</h4>
         <input type='string' class='form-control' id='usernameInput' placeholder='username' required>
         <h4>password</h4>
-        <input type='password' class='form-control' id='passwordInput' minlength='6' placeholder='minimal 6 karakter' required>
+        <input type='password' class='form-control' id='passwordInput' minlength='6' placeholder='password' required>
     </div>
     <h3 class='switch'>Belum punya akun? <a href='#/signup'>Daftar sekarang!</a></h3>
     <button type='submit' class='btn btn-dark btn-lg' id='submitBtn'>Masuk</button>

@@ -28,46 +28,40 @@ const SignIn = {
         submit.addEventListener('click', this.checkInput);
     },
 
-    async checkInput(event) {
+    async checkInput() {
         const usernameInput = document.querySelector('#usernameInput').value;
         const passwordInput = document.querySelector('#passwordInput').value;
 
         //cek username
-        if (userData.find((username) => {
-            return username.username !== usernameInput;
-        })) {
-            alert('Usename salah. Coba lagi.');
-            event.preventDefault();
-            event.stopPropagation();
-        }
+        if (userData.find((username) => { return username.username === usernameInput })) 
+        {
 
-        //cek password
-        if (userData.find((password) => {
-            return password.password !== passwordInput;
-        })) {
-            alert('Password salah. Coba lagi.');
-            event.preventDefault();
-            event.stopPropagation();
-        }
+            //cek password
+            if (userData.find((password) => { return password.password === passwordInput })) 
+            {
 
-        //cek kombinasi username & password
-        if (userData.indexOf(usernameInput) !== userData.indexOf(passwordInput)) {
-            alert('Masukkan kombinasi password dan username yang benar. Coba lagi.');
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        
-        else {
-            const userCredential = userData.indexOf(usernameInput);
-            const getCredential = userData[userCredential];
-            
-            //assign user credential ke local storage
-            if (localStorage.getItem(UserSignedInKey) === null){
-                localStorage.setItem(UserSignedInKey, JSON.stringify(getCredential))
+                //cek kombinasi username & password
+                if (userData.indexOf(usernameInput) === userData.indexOf(passwordInput))
+                {
+                    
+                    //assign user id ke local storage
+                    if (localStorage.getItem(UserSignedInKey) === null)
+                    {
+                        const getIndex = userData.indexOf({ password: `${usernameInput}`});
+                        const getCredential = [
+                            userData[getIndex].id_user
+                        ];
+
+                        localStorage.setItem(UserSignedInKey, getCredential)
+                        
+                        alert('Berhasil masuk!');
+                        location.replace('#/writestory');
+                    }
+                }
             }
-            
-            alert('Berhasil masuk!');
-            location.replace('#/writeYourStory');
+        }
+        else {
+            alert('Password atau usename salah. Coba lagi.');
         }
     }
 };
