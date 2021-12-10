@@ -7,7 +7,7 @@ const AboutUs = {
             <h1>Tentang Kami</h1>
             <p>Mari mengenal siapa di balik Sanctuary</p>
         </div>
-        <div id="content"></div>
+        <div id="content"></div>`
     },
 
     async afterRender() {

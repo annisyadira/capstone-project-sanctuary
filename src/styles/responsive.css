@@ -4,7 +4,7 @@
       width: 50%;
   }
 
-  #content {
+  #body {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6%;
   }
@@ -19,7 +19,7 @@
     display: none;
   }
 
-  #content {
+  #body {
     grid-template-columns: repeat(1);
     padding-bottom: 6%;
   }

@@ -6,12 +6,12 @@ const Article = {
         return `
         <h3 class='title'>ARTIKEL</h3>
         <p class='sub-title'>Ketahui lebih banyak tentang pentingnya menjaga kesehatan mental,</br>tanda-tanda awal penyakit mental, cara mengatasi penyakit mental, dan masih banyak lagi!<p>
-        <div id='content' class='container'></div>
+        <div id='body' class='container'></div>
         `;
     },
     async afterRender() {
         const articles = data[0].article;
-        const container = document.querySelector('#content');
+        const container = document.querySelector('#body');
 
         articles.forEach((article) => {
             container.innerHTML += createArticleItem(article);

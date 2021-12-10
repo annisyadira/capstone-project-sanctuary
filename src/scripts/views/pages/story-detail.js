@@ -13,6 +13,7 @@ const StoryDetail = {
 
     async afterRender() {
         window.scrollTo(0, 0);
+        const getStory = data[1].story
     
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const stories = await data.story(url.id_story);

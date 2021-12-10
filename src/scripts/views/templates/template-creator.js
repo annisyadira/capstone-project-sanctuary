@@ -2,7 +2,7 @@ const createArticleItem = (article) => `
     <article class='item'>
         <h3 class='item-title'>${article.title}</h3>
         <p>${article.content}</p>
-        <a href='#/article-detail'>Baca Selengkapnya.</a>
+        <a href='#/article-detail/${article.id_article}'>Baca Selengkapnya.</a>
     </article>
 `;
 
@@ -10,17 +10,21 @@ const createStoryItem = (story) => `
     <article class='item'>
         <h3 class='item-title'>${story.title}</h3>
         <p>${story.content}</p>
-        <a class='story-detail' id='story-detail' href='#/story-detail'>Baca Selengkapnya.</a>
+        <a class='story-detail' id='story-detail' href='#/story-detail/${story.id_story}'>Baca Selengkapnya.</a>
     </article>
 `;
 
 const createInputStory = () => `
     <h3 class='title'>TULIS DAN BAGIKAN CERITAMU</h3>
-    <div>
-        <input type='string' class='form-control' id='addTitle' placeholder='Judul' required>
-        <input type='string' class='form-control' id='addContent' placeholder='Isi' required>
-        <button type='submit' id='submitBtn'>Bagikan</button>
+    <div id='write-story'>  
+        <div class="form-group">
+            <input type="string" id='addTitle' class="form-control" placeholder="Judul" required>
+        </div>
+        <div class="form-group">
+            <input type="string" id='addContent' class="form-control" placeholder="Isi" required>
+        </div>
     </div>
+    <button type='submit' class='btn btn-warning btn-lg' id='submitBtn'>Bagikan</button>
 `;
 
 const createSignIn = () => `
