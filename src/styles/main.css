@@ -312,6 +312,20 @@ p {
     color: #fff;
 }
 
+/*detail kisah*/
+.card > h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #533535;
+    text-align: center;
+}
+
+.card > p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
 /*Sign in & Sign up page*/
 
 #sign-content {
