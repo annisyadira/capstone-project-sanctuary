@@ -12,8 +12,6 @@ const logoutInitiator = {
             if (conf == true) {
                 localStorage.clear();
                 location.reload();
-            } else {
-                ev.stopPropagation();
             }
         }
     }

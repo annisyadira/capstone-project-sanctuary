@@ -49,7 +49,7 @@ const SignIn = {
                     {
                         const getIndex = userData.indexOf({ password: `${usernameInput}`});
                         const getCredential = [
-                            userData[0].id_user
+                            userData.at(getIndex).id_user
                         ];
 
                         localStorage.setItem(UserSignedInKey, getCredential)
