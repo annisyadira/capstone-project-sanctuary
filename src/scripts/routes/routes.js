@@ -4,6 +4,8 @@ import Article from '../views/pages/article';
 import Story from '../views/pages/story';
 import WriteStory from '../views/pages/writestory';
 import AboutUs from '../views/pages/aboutus';
+import ArticleDetail from '../views/pages/article-detail';
+import StoryDetail from '../views/pages/story-detail';
 
 const routes = {
   '/signup': SignUp,
@@ -12,6 +14,8 @@ const routes = {
   '/story': Story,
   '/writestory': WriteStory,
   '/aboutus': AboutUs,
+  '/article-detail': ArticleDetail,
+  '/story-detail/:id': StoryDetail,
 };
 
 export default routes;
