@@ -2,7 +2,7 @@ const createArticleItem = (article) => `
     <article class='item'>
         <h3 class='item-title'>${article.title}</h3>
         <p>${article.content}</p>
-        <a href='#/Story-Detail'>Baca Selengkapnya.</a>
+        <a href='#/article-detail'>Baca Selengkapnya.</a>
     </article>
 `;
 
@@ -10,7 +10,7 @@ const createStoryItem = (story) => `
     <article class='item'>
         <h3 class='item-title'>${story.title}</h3>
         <p>${story.content}</p>
-        <a href='#/Story-Detail'>Baca Selengkapnya.</a>
+        <a class='story-detail' id='story-detail' href='#/story-detail'>Baca Selengkapnya.</a>
     </article>
 `;
 
@@ -82,11 +82,35 @@ const createAboutUs = () => `
     </div>
 `;
 
+const createArticleDetailTemplate = (article) => `
+    <div class="row">
+        <div class="detail">
+            <div class="card">
+                <h3 class="item-title">${article.title}</h3>
+                <p>${article.content}</p>
+            </div>
+        </div>
+    </div>
+`;
+
+const createStoryDetailTemplate = (story) => `
+    <div class="row">
+        <div class="detail">
+            <div class="card">
+                <h3 class="item-title">${story.title}</h3>
+                <p>${story.content}</p>
+            </div>
+        </div>
+    </div>
+`;
+
 export { 
     createArticleItem,
     createStoryItem,
     createInputStory,
     createSignIn,
     createSignUp,
-    createAboutUs
+    createAboutUs,
+    createArticleDetailTemplate,
+    createStoryDetailTemplate
 };
