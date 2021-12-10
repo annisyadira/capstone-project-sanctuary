@@ -35,6 +35,10 @@ h1, h2, h3, p {
     margin-left: auto;
 }
 
+.logout {
+    font-style: italic;
+}
+
 /*--Main--*/
 .feeds {
     padding: 0 1rem;
