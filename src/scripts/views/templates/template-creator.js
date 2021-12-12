@@ -2,7 +2,7 @@ const createArticleItem = (article) => `
     <article class='item'>
         <h3 class='item-title'>${article.title}</h3>
         <p>${article.content}</p>
-        <a href='#/article-detail/${article.id_article}'>Baca Selengkapnya.</a>
+        <a class='article-detail' id='article-detail' href='#/article-detail/${article.id_article}'>Baca Selengkapnya.</a>
     </article>
 `;
 
