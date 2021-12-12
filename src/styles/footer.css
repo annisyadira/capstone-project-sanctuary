@@ -1,6 +1,5 @@
 /*Footer*/
 footer {
-    padding: 2em;
     width: 100%;
     text-align: center;
     border-top: 3px groove #C3B091;
@@ -8,7 +7,7 @@ footer {
 }
   
 footer ul {
-    margin: 0 auto;
+    margin: 1% auto;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -16,10 +15,10 @@ footer ul {
 }
   
 footer li {
-    margin: 0.3em 0;
     font-size: 16px;
     text-decoration: none;
     color: #fff;
+    padding-bottom: 1%;
 }
 
 footer a {

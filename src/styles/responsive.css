@@ -2,6 +2,11 @@
   #clear {
     margin: 0 20%;
   }
+
+  #body {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1390px) {
