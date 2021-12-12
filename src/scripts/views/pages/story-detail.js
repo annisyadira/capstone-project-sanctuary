@@ -16,9 +16,16 @@ const StoryDetail = {
         const getStory = data[1].story
     
         const url = UrlParser.parseActiveUrlWithoutCombiner();
-        const stories = await data.story(url.id_story);
+        const storyId = await url.id;
+        const getIndex = getStory.findIndex(function(item, i){
+            return item.id_story === storyId;
+        });
+        
+        const story = getStory.at(getIndex);
+        console.log(getIndex);
+
         const container = document.querySelector('#story-detail');
-        container.innerHTML = createStoryDetailTemplate(stories);
+        container.innerHTML = createStoryDetailTemplate(story);
     },
 }
 export default StoryDetail;

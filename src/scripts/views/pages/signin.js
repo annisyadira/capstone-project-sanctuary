@@ -32,27 +32,32 @@ const SignIn = {
         const usernameInput = document.querySelector('#usernameInput').value;
         const passwordInput = document.querySelector('#passwordInput').value;
 
+        const usernameIndex = userData.findIndex(function(item, i){
+            return item.username === usernameInput;
+        });
+
+        const passwordIndex = userData.findIndex(function(item, i){
+            return item.password === passwordInput;
+        });
+          
+
         //cek username
         if (userData.find((username) => { return username.username === usernameInput })) 
         {
-
             //cek password
             if (userData.find((password) => { return password.password === passwordInput })) 
             {
-
                 //cek kombinasi username & password
-                if (userData.indexOf(usernameInput) === userData.indexOf(passwordInput))
+                if (usernameIndex === passwordIndex)
                 {
-                    
                     //assign user id ke local storage
                     if (localStorage.getItem(UserSignedInKey) === null)
                     {
-                        const getIndex = userData.indexOf({ password: `${usernameInput}`});
-                        const getCredential = [
-                            userData.at(getIndex).id_user
+                        const getId = [
+                            userData.at(usernameIndex).id_user
                         ];
 
-                        localStorage.setItem(UserSignedInKey, getCredential)
+                        localStorage.setItem(UserSignedInKey, getId)
                         
                         alert('Berhasil masuk!');
                         location.replace('#/writestory');
@@ -61,7 +66,7 @@ const SignIn = {
             }
         }
         else {
-            alert('Password atau usename salah. Coba lagi.');
+            alert('Password atau username salah. Coba lagi.');
         }
     }
 };
