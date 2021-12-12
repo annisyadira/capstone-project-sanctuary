@@ -14,7 +14,7 @@ const routes = {
   '/story': Story,
   '/writestory': WriteStory,
   '/aboutus': AboutUs,
-  '/article-detail': ArticleDetail,
+  '/article-detail/:id': ArticleDetail,
   '/story-detail/:id': StoryDetail,
 };
 
