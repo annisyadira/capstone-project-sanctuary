@@ -1,4 +1,10 @@
-@media (min-width: 992px) {
+@media (min-width: 1390px) {
+  #clear {
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1390px) {
   .col-lg-6 {
       flex: 0 0 auto;
       width: 50%;
@@ -7,6 +13,22 @@
   #body {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6%;
+  }
+
+  #clear {
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #clear {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  #clear {
+    margin: 0 5%;
   }
 }
 

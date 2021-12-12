@@ -3,6 +3,8 @@
     transition: all 0.5s;
     z-index: 997;
     height: 75px;
+    width: 100%;
+    padding: 0 3%;
 }
 
 .d-flex {
