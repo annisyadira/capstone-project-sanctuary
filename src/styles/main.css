@@ -236,6 +236,24 @@ section {
     background: #533535;
 }
 
+/*Detail kisah dan artikel*/
+.detail .card {
+    margin-bottom: 2rem;
+}
+
+.card > h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #533535;
+    text-align: center;
+}
+
+.card > p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
 /*About Us*/
 
 *, *:before, *:after {
