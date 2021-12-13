@@ -6,11 +6,15 @@ const SignInCheck = {
         window.addEventListener('load', this._checkOnWriteStory);
     },
 
-    _checkOnWriteStory() {
+    _checkOnWriteStory(ev) {
         if (location.hash === '#/writestory') {
             if (localStorage.getItem(UserSignedInKey) === null) {
-                alert('Masuk untuk mengakses halaman ini');
-                location.replace('#/signin');
+                const conf = confirm('Masuk untuk mengakses halaman ini');
+                if (conf === true) {
+                    location.replace('#/signin');
+                } else {
+                    location.replace('#/story');
+                }
             } 
             else {
                 console.log('Akses diberikan.');
