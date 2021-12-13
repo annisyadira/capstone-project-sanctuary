@@ -132,8 +132,8 @@ section {
 
 .item > p {
     text-indent: 4%;
-    font-size: larger;
     overflow: hidden;
+    font-size: 17px;
     text-overflow: ellipsis;
     text-align: justify;
     display: -webkit-box;
@@ -252,16 +252,17 @@ section {
 }
 
 .card > h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
     color: #533535;
     text-align: center;
 }
 
 .card > p {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 2rem;
+    font-size: 20px;
     text-align: justify;
+    margin-bottom: 2rem;
 }
 
 /*About Us*/
