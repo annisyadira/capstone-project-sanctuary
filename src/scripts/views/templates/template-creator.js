@@ -55,7 +55,7 @@ const createSignUp = () => `
 
 const createAboutUs = () => `
     <h2 style="text-align:center">OUR TEAM</h2>
-    <div class="row">
+    <div id="team" class="row">
         <div class="column">
             <div class="card">
                 <center>

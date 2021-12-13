@@ -7,6 +7,11 @@
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6%;
   }
+
+  #team {
+    margin: 0 20%;
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1390px) {
@@ -23,6 +28,11 @@
   #clear {
     margin: 0 15%;
   }
+
+  #team {
+    margin: 0 17%;
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -34,6 +44,11 @@
 @media (min-width: 992px) and (max-width: 1050px) {
   #clear {
     margin: 0 5%;
+  }
+
+  #team {
+    margin: 0 10%;
+    margin-bottom: 5%;
   }
 }
 
@@ -69,7 +84,23 @@
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  #team {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+    margin-bottom: 5%;
+  }
+
+  .column {
+    width: fit-content;
+  }
 }
 
+@media screen and (max-width: 550px) {
+  #team {
+    margin: 0 5%;
+  }
+}
 
   
