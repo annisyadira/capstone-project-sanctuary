@@ -6,7 +6,7 @@ const SignInCheck = {
         window.addEventListener('load', this._checkOnWriteStory);
     },
 
-    _checkOnWriteStory(ev) {
+    _checkOnWriteStory() {
         if (location.hash === '#/writestory') {
             if (localStorage.getItem(UserSignedInKey) === null) {
                 const conf = confirm('Masuk untuk mengakses halaman ini');
