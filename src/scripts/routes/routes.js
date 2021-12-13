@@ -1,4 +1,5 @@
 import Home from '../views/pages/home';
+import Locator from '../views/pages/locator';
 import SignUp from '../views/pages/signup';
 import { SignIn } from '../views/pages/signin';
 import Article from '../views/pages/article';
@@ -10,6 +11,7 @@ import StoryDetail from '../views/pages/story-detail';
 
 const routes = {
   '/': Home,
+  '/locator': Locator,
   '/signup': SignUp,
   '/signin': SignIn,
   '/article': Article,
