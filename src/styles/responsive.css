@@ -59,7 +59,8 @@
 
   #body {
     grid-template-columns: repeat(1);
-    padding-bottom: 6%;
+    gap: 2%;
+    margin-bottom: 50%;
   }
 
   .detail > .card > p {
@@ -70,6 +71,14 @@
 @media screen and (min-width: 992px) {
   #hamburger {
     display: none;
+  }
+
+  #article-detail {
+    margin-bottom: 30%;
+  }
+
+  #story-detail {
+    margin-bottom: 10%;
   }
 }
 
@@ -84,6 +93,14 @@
 
   #clear {
     margin: 0 27vw;
+  }
+
+  #article-detail {
+    margin-bottom: 30%;
+  }
+
+  #story-detail {
+    margin-bottom: 20%;
   }
 
   #hamburger {
@@ -129,6 +146,14 @@
     margin-bottom: 30px;
   }
 
+  #body {
+    margin-bottom: 70%;
+  }
+
+  #article-detail {
+    margin-bottom: 50%;
+  }
+
   #clear {
     margin: 0 20vw;
   }
@@ -148,6 +173,10 @@
 @media screen and (max-width: 600px) {
   #clear {
     margin: 0 17vw;
+  }
+
+  #article-detail {
+    margin-bottom: 45%;
   }
 }
 
@@ -187,5 +216,17 @@
   .sub-title, .detail > .card > p, .item > p, .item > a{
     font-size: 13px;
     margin: 0 2%;
+  }
+
+  #body {
+    margin-bottom: 90%;
+  }
+
+  #story-detail {
+    margin-bottom: 50%;
+  }
+
+  #article-detail {
+    margin-bottom: 30%;
   }
 }  

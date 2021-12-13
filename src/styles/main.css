@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #E4CDA7;
+    background-image: url('../public/images/assets/bg.jpg');
 }
 
 a {
@@ -124,10 +124,9 @@ section {
 }
 
 #body {
-    margin: 3%;
     display: grid;
     gap: 7%;
-    margin-bottom: 7%;
+    margin-bottom: 27%;
 }
 
 .item-title {
