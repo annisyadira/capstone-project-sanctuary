@@ -1,3 +1,4 @@
+import Home from '../views/pages/home';
 import SignUp from '../views/pages/signup';
 import { SignIn } from '../views/pages/signin';
 import Article from '../views/pages/article';
@@ -8,6 +9,7 @@ import ArticleDetail from '../views/pages/article-detail';
 import StoryDetail from '../views/pages/story-detail';
 
 const routes = {
+  '/': Home,
   '/signup': SignUp,
   '/signin': SignIn,
   '/article': Article,
