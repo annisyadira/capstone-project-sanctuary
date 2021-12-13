@@ -29,6 +29,10 @@ h1, h2, h3, p {
     font-family: "Raleway", sans-serif;
 }
 
+.logo {
+    min-height: 44px;
+}
+
 .container {
     width: 100%;
     margin-right: auto;

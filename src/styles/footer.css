@@ -1,13 +1,16 @@
 /*Footer*/
 footer {
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
     border-top: 3px groove #C3B091;
     background-color: #6B4F4F;
 }
   
-footer ul {
-    margin: 1% auto;
+footer > ul {
+    padding: 2% 0;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -15,10 +18,9 @@ footer ul {
 }
   
 footer li {
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     color: #fff;
-    padding-bottom: 1%;
 }
 
 footer a {
