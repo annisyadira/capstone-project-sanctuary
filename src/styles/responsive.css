@@ -35,9 +35,9 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1050px) and (max-width: 1200px) {
   #clear {
-    margin: 0 10%;
+    margin: 0 7%;
   }
 }
 
@@ -53,10 +53,6 @@
 }
 
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
   .navbar ul {
     display: none;
   }
@@ -67,9 +63,48 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  #hamburger {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #hero {
     height: calc(100vh - 70px);
+  }
+
+  .logo > a {
+    margin-left: 40%;
+  }
+
+  #clear {
+    margin: 0 27vw;
+  }
+
+  #hamburger {
+    padding: 30px;
+  }
+
+  nav.responsive .icon {
+    position: absolute;
+    padding: 44px;
+    right: 0;
+    top: 0;
+  }
+
+  nav.responsive ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #6B4F4F;
+    text-align: center;
+    padding: 30px 0;
+    padding-right: 30px;
+    margin-top: 20rem;
+  }
+
+  nav.responsive ul li {
+    margin: 5px 0;
   }
 }
 
@@ -85,6 +120,10 @@
     margin-bottom: 30px;
   }
 
+  #clear {
+    margin: 0 20vw;
+  }
+
   #team {
     display: flex;
     flex-direction: column;
@@ -97,10 +136,34 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  #clear {
+    margin: 0 17vw;
+  }
+}
+
 @media screen and (max-width: 550px) {
   #team {
     margin: 0 5%;
   }
+
+  #clear {
+    margin: 0 15vw;
+  }
 }
 
-  
+@media screen and (max-width: 500px) {
+  #clear {
+    margin: 0;
+  }
+
+  nav.responsive ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #6B4F4F;
+    text-align: center;
+    padding: 30px 0;
+    padding-right: 30px;
+    margin-top: 31rem;
+  }
+}  

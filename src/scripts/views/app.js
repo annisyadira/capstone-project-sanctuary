@@ -1,6 +1,7 @@
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 import logoutInitiator from '../utils/logoutInitiator';
+import DrawerInitiator from '../utils/drawerInitiator';
 
 class App {
   constructor({ button, drawer, content, logoutBtn }) {
@@ -15,6 +16,11 @@ class App {
   _initialAppShell() {
     logoutInitiator.init({
       logoutBtn: this._logoutBtn
+    }),
+    DrawerInitiator.init({
+      button: this._button,
+      drawer: this._drawer,
+      content: this._content,
     })
   }
 

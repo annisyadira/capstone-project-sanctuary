@@ -9,7 +9,7 @@ import SignInCheck from './utils/signInChecker';
 import App from './views/app';
 
 const app = new App({
-  button: document.querySelector('.mobile-nav-toggle'), // nanti ini untuk hamburger button
+  button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#navbar'),
   content: document.querySelector('#maincontent'),
   logoutBtn: document.querySelector('#logout')
