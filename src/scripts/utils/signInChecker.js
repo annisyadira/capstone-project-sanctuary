@@ -21,8 +21,8 @@ const SignInCheck = {
 
     _checkNavbar() {
         const logOutBtn = document.querySelector('#logout');
-        const signInBtn = document.querySelector('.signin');
-        const signUpBtn = document.querySelector('.signup');
+        const signInBtn = document.querySelector('#signin');
+        const signUpBtn = document.querySelector('#signup');
 
         //user has not logged in
         if (localStorage.getItem(UserSignedInKey) === null) {

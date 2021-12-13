@@ -35,8 +35,18 @@ h1, h2, h3, p {
     margin-left: auto;
 }
 
-.logout {
-    font-style: italic;
+#logout {
+    margin: 0 15px;
+    margin-left: 30px;
+}
+
+#signin {
+    margin: 0 15px;
+    margin-left: 30px;
+}
+
+#signup {
+    margin: 0 15px;
 }
 
 /*--Main--*/
