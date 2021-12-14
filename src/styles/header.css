@@ -12,11 +12,6 @@
     align-items: center;
 }
 
-
-/*#header.header-scrolled {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-} u/ index.js*/
-
 #header .logo {
     font-size: 30px;
     margin: 0;
@@ -26,10 +21,6 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
-/*.scrolled-offset {
-    margin-top: 70px;
-} untuk di index.js*/
 
 /*--navbar*--*/
 .navbar {
@@ -114,43 +105,6 @@
     color: #fff;
 }
 
-/*.navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(9, 9, 9, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-  }
-  .navbar-mobile .mobile-nav-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  .navbar-mobile ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 0;
-    background-color: #fff;
-    overflow-y: auto;
-    transition: 0.3s;
-  }
-  .navbar-mobile a, .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #222222;
-  }
-  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #5cb874;
-  } saat index.js udah jadi*/
-
 /*--Hero--*/
 #hero {
     width: 100%;
@@ -158,7 +112,6 @@
     background: url("../public/images/heros/slide1.jpg") center;
     background-size: cover;
     position: relative;
-    margin-top: 70px;
     padding: 0;
     display: flex;
     justify-content: center;
