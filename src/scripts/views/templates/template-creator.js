@@ -43,7 +43,7 @@ const createSignUp = () => `
     <h3 class='title'>DAFTAR</h3>
     <div id='sign-form' class='card'>
         <h4>e-mail</h4>
-        <input type='string' class='form-control' id='emailInput' placeholder='e-mail' required>
+        <input type='email' class='form-control' id='emailInput' placeholder='e-mail' required>
         <h4>username</h4>
         <input type='string' class='form-control' id='usernameInput' placeholder='username' required>
         <h4>password</h4>

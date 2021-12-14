@@ -49,10 +49,12 @@ h1, h2, h3, p {
 #signin {
     margin: 0 15px;
     margin-left: 30px;
+    min-width: fit-content;
 }
 
 #signup {
     margin: 0 15px;
+    min-width: fit-content;
 }
 
 /*--Main--*/
@@ -347,11 +349,6 @@ p {
 }
 
 /*Sign in & Sign up page*/
-
-#sign-content {
-    margin: 7%;
-    padding: 0 10%;
-}
 
 #sign-form {
     background-color: rgba(255, 255, 255, 0.322);

@@ -80,11 +80,28 @@
   #story-detail {
     margin-bottom: 10%;
   }
+
+  #sign-content {
+    margin: 0 7%;
+    margin-top: 11%;
+    padding: 0 10%;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
   #hero {
     height: calc(100vh - 70px);
+  }
+
+  
+  #sign-content {
+    margin: 0 3%;
+    margin-top: 20%;
+  }
+
+  #sign-form {
+    width: 110%;
   }
 
   .logo > a {
@@ -177,6 +194,15 @@
   #article-detail {
     margin-bottom: 45%;
   }
+
+  #sign-content {
+    margin: 0 3%;
+    margin-top: 25%;
+  }
+
+  #sign-form {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -228,4 +254,19 @@
   #article-detail {
     margin-bottom: 30%;
   }
+
+  #sign-content {
+    margin: 0 3%;
+    margin-top: 35%;
+  }
+
+  #sign-form {
+    width: 80%;
+  }
+
+  #sign-form > h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 8%;
+  } 
 }  
