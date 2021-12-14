@@ -8,11 +8,13 @@ html {
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: "Open Sans", sans-serif;
     background-image: url('../public/images/assets/bg.jpg');
+}
+
+#maincontent {
+    margin-top: 70px;
 }
 
 a {
