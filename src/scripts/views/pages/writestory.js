@@ -1,6 +1,9 @@
+
 import { createInputStory } from '../templates/template-creator';
 import data from '../../data/DATA.json';
 import SignInCheck from '../../utils/signInChecker';
+
+// const fs = require('fs');
 
 SignInCheck.init();
 
@@ -22,20 +25,31 @@ const WriteStory = {
         const content = document.querySelector('#addContent').value;
         
         const storyData = data[1].story;
-        const lastId = parseInt(storyData[-1].id_story);
+        const lastId = parseInt(storyData.at(-1).id_story);
         const getUserId = localStorage.getItem(UserSignedInKey.id_user);
         const date = new Date();
         let dateCreated = date.toLocaleString();
 
         const NewStory = {
-            "id_story": lastId += 1,
-            "id_user": getUserId,
-            "title": title,
-            "content": content,
-            "created_at": dateCreated
+            "id_story": `${lastId += 1}`,
+            "id_user": `${getUserId}`,
+            "title": `${title}`,
+            "content": `${content}`,
+            "created_at": `${dateCreated}`
         }
 
-        storyData.push(NewStory);
+        // fs.readFile('../../data/DATA.json', 'utf8', (err, data) => {
+        //     if (err) {
+        //         throw err;
+        //     } else {
+        //         storyData = JSON.parse(data);
+        //         storyData.push(NewStory);
+        //         json = JSON.stringify(storyData); 
+        //         fs.writeFile('../../data/DATA.json', json, 'utf8', callback);
+        //     }
+        // })
+        
+        alert('Kisah berhasil ditambahkan!');
     }
 }
 

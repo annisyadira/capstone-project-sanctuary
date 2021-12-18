@@ -2,7 +2,7 @@ const Home = {
     async render() {
         return `
         <!--Hero-->
-        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <section id="hero" class="card d-flex flex-column justify-content-center align-items-center">
             <div class="container text-center text-md-left" data-aos="fade-up">
             <h1>Selamat Datang di <span>Sanctuary</span></h1>
             <p>Bersama kita akan menjadi lebih kuat<br>Tempat belajar, mencari bantuan, dan menjadi bagian dari komunitas</p>

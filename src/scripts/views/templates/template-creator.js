@@ -1,5 +1,5 @@
 const createArticleItem = (article) => `
-    <article class='item'>
+    <article class='item card'>
         <h3 class='item-title'>${article.title}</h3>
         <p>${article.content}</p>
         <a class='article-detail' id='article-detail' href='#/article-detail/${article.id_article}'>Baca Selengkapnya.</a>
@@ -7,7 +7,7 @@ const createArticleItem = (article) => `
 `;
 
 const createStoryItem = (story) => `
-    <article class='item'>
+    <article class='item card'>
         <h3 class='item-title'>${story.title}</h3>
         <p>${story.content}</p>
         <a class='story-detail' id='story-detail' href='#/story-detail/${story.id_story}'>Baca Selengkapnya.</a>
@@ -89,7 +89,7 @@ const createAboutUs = () => `
 const createArticleDetailTemplate = (article) => `
     <div class="row">
         <div class="detail">
-            <div class="card">
+            <div class="card full">
                 <h3 class="item-title">${article.title}</h3>
                 <p>${article.content}</p>
             </div>
@@ -100,7 +100,7 @@ const createArticleDetailTemplate = (article) => `
 const createStoryDetailTemplate = (story) => `
     <div class="row">
         <div class="detail">
-            <div class="card">
+            <div class="card full">
                 <h3 class="item-title">${story.title}</h3>
                 <p>${story.content}</p>
             </div>

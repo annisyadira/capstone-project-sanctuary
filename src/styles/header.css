@@ -21,7 +21,6 @@
     line-height: 2;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 /*--navbar*--*/
@@ -114,6 +113,7 @@
     margin-top: 70px;
     background: url("../public/images/heros/slide1.jpg") center;
     background-size: cover;
+    
     position: relative;
     padding: 0;
     display: flex;

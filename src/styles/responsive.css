@@ -1,272 +1,418 @@
 @media (min-width: 1390px) {
-  #clear {
-    margin: 0 20%;
-  }
+    #clear {
+        width: 46%;
+    }
 
-  #body {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 6%;
-  }
+    #body {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4%;
+    }
 
-  #team {
-    margin: 0 20%;
-    margin-bottom: 5%;
-  }
+    #team {
+        margin: 0 20%;
+        margin-bottom: 10%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1390px) {
-  .col-lg-6 {
-      flex: 0 0 auto;
-      width: 50%;
-  }
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
 
-  #body {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 6%;
-  }
+    #clear {
+        width: 27%;
+    }
 
-  #clear {
-    margin: 0 15%;
-  }
+    #body {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+        padding-bottom: 4%;
+    }
 
-  #team {
-    margin: 0 17%;
-    margin-bottom: 5%;
-  }
+    #team {
+        margin: 0 7%;
+        margin-bottom: 13%;
+    }
+
+    .card.full {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1050px) and (max-width: 1200px) {
-  #clear {
-    margin: 0 7%;
-  }
+    #clear {
+        width: 16.5%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1050px) {
-  #clear {
-    margin: 0 5%;
-  }
+    #clear {
+        width: 12%;
+    }
 
-  #team {
-    margin: 0 10%;
-    margin-bottom: 5%;
-  }
+    #team {
+        margin: 0 5%;
+        margin-bottom: 15%;
+    }
 }
 
-@media (max-width: 991px) {
-  .navbar ul {
-    display: none;
-  }
+@media (max-width: 992px) {
+    #sign-form {
+        padding: 6%;
+        max-width: 100%;
+    }
+    .navbar ul {
+        display: none;
+    }
 
-  #body {
-    grid-template-columns: repeat(1);
-    gap: 2%;
-    margin-bottom: 50%;
-  }
+    #body {
+        grid-template-columns: repeat(1);
+        gap: 1%;
+        margin-bottom: 55%;
+    }
 
-  .detail > .card > p {
-    font-size: 17px;
-  }
+    .detail > .card > p {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-  #hamburger {
-    display: none;
-  }
+    #maincontent {
+        margin: 0 8%;
+        margin-top: 10%;
+    }
 
-  #article-detail {
-    margin-bottom: 30%;
-  }
+    #hamburger {
+        display: none;
+    }
 
-  #story-detail {
-    margin-bottom: 10%;
-  }
+    .sub-title{
+        font-size: 20px;
+    }
 
-  #sign-content {
-    margin: 0 7%;
-    margin-top: 11%;
-    padding: 0 10%;
-  }
+    #sign-content {
+        display: block;
+        margin-top: 11%;
+        padding: 0 10%;
+    }
 
+    .item {
+        padding: 7%;
+    }
+
+    .item > h3, .item > p, .item > a {
+        margin: 0;
+    }
+
+    .item > h3 {
+        margin-bottom: 7%;
+    }
 }
 
 @media screen and (max-width: 992px) {
-  #hero {
-    height: calc(100vh - 70px);
-  }
+    .item {
+        padding: 7%;
+    }
 
-  
-  #sign-content {
-    margin: 0 3%;
-    margin-top: 20%;
-  }
+    .item > h3 {
+        margin: 0;
+        margin-bottom: 3%;
+    }
 
-  #sign-form {
-    width: 110%;
-  }
+    .item > P {
+        margin: 0;
+    }
 
-  .logo > a {
-    margin-left: 40%;
-  }
+    #hero {
+        height: calc(100vh - 70px);
+    }
 
-  #clear {
-    margin: 0 27vw;
-  }
+    #maincontent {
+        margin: 0 5%;
+        margin-top: 15%;
+    }
 
-  #article-detail {
-    margin-bottom: 30%;
-  }
+    #sign-content {
+        margin-top: 20%;
+    }
 
-  #story-detail {
-    margin-bottom: 20%;
-  }
+    .logo > a {
+        margin-left: 10%;
+    }
 
-  #hamburger {
-    padding: 20px;
-  }
+    #clear {
+        margin: 0 27vw;
+        width: 45%;
+    }
 
-  nav.responsive .icon {
-    position: absolute;
-    padding: 44px;
-    right: 0;
-    top: 0;
-  }
+    #hamburger {
+        padding: 20px;
+    }
 
-  nav.responsive ul{
-    display: flex;
-    flex-direction: column;
-    background-color: #6B4F4F;
-    text-align: center;
-    padding: 30px 0;
-    padding-right: 30px;
-    margin-top: 20rem;
-  }
+    #hamburger.responsive {
+        display: none;
+    }
 
-  nav.responsive ul li {
-    margin: 5px 0;
-  }
+    nav.responsive .icon {
+        position: absolute;
+        padding: 44px;
+        right: 0;
+        top: 0;
+    }
 
-  .row {
-    margin: 0;
-  }
+    nav.responsive ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #6b4f4f;
+        text-align: center;
+        padding: 30px 0;
+        padding-right: 30px;
+        margin-top: 20rem;
+    }
+
+    nav.responsive > ul > li > button.btn {
+        width: 90px;
+    }
+
+    nav.responsive > ul > li > button#signup {
+        margin-left: 30px;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    .row {
+        margin: 0;
+        margin-bottom: 20%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  #hero h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  
-  #hero p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
+    .logo > a {
+        margin: 0;
+        margin-left: 7%;
+    }
 
-  #body {
-    margin-bottom: 70%;
-  }
+    #clear {
+        width: 50%;
+        margin: 0 20vw;
+    }
 
-  #article-detail {
-    margin-bottom: 50%;
-  }
+    #maincontent {
+        margin: 0 7%;
+        margin-top: 20%;
+    }
 
-  #clear {
-    margin: 0 20vw;
-  }
+    #hero h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-  #team {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15%;
-    margin-bottom: 5%;
-  }
+    #hero p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
 
-  .column {
-    width: fit-content;
-  }
+    #body {
+        margin-bottom: 60%;
+    }
+
+    p > button#submitBtn {
+        margin: 3% auto;
+    }
+
+    .item {
+        padding: 7%;
+    }
+
+    .item > h3 {
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+    .item > P {
+        margin: 0;
+    }
+
+    #team {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20%;
+        margin-bottom: 20%;
+    }
+
+    .column {
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  #clear {
-    margin: 0 17vw;
-  }
+    .logo > a {
+        margin-left: 10%;
+    }
 
-  #article-detail {
-    margin-bottom: 45%;
-  }
+    #maincontent {
+        margin: 0 3%;
+        margin-top: 22%;
+    }
 
-  #sign-content {
-    margin: 0 3%;
-    margin-top: 25%;
-  }
+    #maincontent > p {
+        padding: 0 5%;
+    }
 
-  #sign-form {
-    width: 100%;
-  }
+    p.sub-title,
+    p.submitBtn {
+        margin-bottom: 5%;
+    }
+
+    p.sub-title {
+        font-size: 18px;
+    }
+
+    #body {
+        gap: 1%;
+        margin-bottom: 70%;
+    }
+
+    #clear {
+        margin: 0 17vw;
+        width: 23%;
+    }
+
+    .item {
+        padding: 7%;
+    }
+
+    .card > p {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .card > h3 {
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+
+    #sign-content {
+        margin: 0 3%;
+        margin-top: 25%;
+    }
+
+    #sign-form {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 550px) {
-  #team {
-    margin: 0 5%;
-  }
+    #team {
+        margin: 0 15%;
+        margin-bottom: 20%;
+    }
 
-  #clear {
-    margin: 0 15vw;
-  }
+    #clear {
+        margin: 0 15vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .logo > a {
-    font-size: 20px;
-  }
+    .logo > a {
+        font-size: 23px;
+        margin-left: 10%;
+    }
 
-  #clear {
-    margin: 0 10vw;
-  }
+    #clear {
+        margin: 0 10vw;
+        width: 29%;
+    }
 
-  nav.responsive ul{
-    display: flex;
-    flex-direction: column;
-    background-color: #6B4F4F;
-    text-align: center;
-    padding: 30px 0;
-    padding-right: 30px;
-    margin-top: 31rem;
-  }
+    nav.responsive ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #6b4f4f;
+        text-align: center;
+        padding: 30px 0;
+        padding-right: 35px;
+        margin-top: 31rem;
+    }
 
-  .title, .detail > .card > h3, .item > .item-title {
-    font-size: 18px;
-  }
+    .title,
+    .detail > .card > h3,
+    .item > .item-title {
+        font-size: 20px;
+    }
 
-  .sub-title, .detail > .card > p, .item > p, .item > a{
-    font-size: 13px;
-    margin: 0 2%;
-  }
+    .detail > .card > p,
+    .item > p,
+    .item > a {
+        font-size: 13px;
+        margin: 0 2%;
+    }
 
-  #body {
-    margin-bottom: 90%;
-  }
+    .card > h3 {
+        margin-bottom: 5%;
+    }
 
-  #story-detail {
-    margin-bottom: 50%;
-  }
+    .sub-title {
+        font-size: 15px;
+        margin: 4% 0;
+        margin-bottom: 6%;
+    }
 
-  #article-detail {
-    margin-bottom: 30%;
-  }
+    .item {
+        padding: 5%;
+    }
 
-  #sign-content {
-    margin: 0 3%;
-    margin-top: 35%;
-  }
+    #article-detail {
+        margin-bottom: 10%;
+    }
 
-  #sign-form {
-    width: 80%;
-  }
+    #submitBtn {
+        margin-bottom: 6%;
+    }
 
-  #sign-form > h4 {
-    font-size: 15px;
-    text-align: center;
-    margin-top: 8%;
-  } 
-}  
+    #maincontent {
+        margin-top: 25%;
+        margin-bottom: 65%;
+    }
+
+    #sign-content {
+        margin: 0 3%;
+        margin-top: 35%;
+    }
+
+    #sign-form {
+        width: 80%;
+    }
+
+    #sign-form > h4 {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #maincontent {
+        margin-top: 30%;
+        margin-bottom: 70%;
+    }
+
+    p.sub-title {
+        font-size: 14px;
+    }
+
+    .item {
+        padding: 5%;
+    }
+
+    .item-title {
+        font-size: 15px;
+    }
+
+    #team {
+        margin: 0;
+    }
+}
