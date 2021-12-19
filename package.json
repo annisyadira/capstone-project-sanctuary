@@ -1,41 +1,42 @@
 {
-  "name": "capstone-project-sanctuary",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "start": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/annisyadira/capstone-project-sanctuary.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/annisyadira/capstone-project-sanctuary/issues"
-  },
-  "homepage": "https://github.com/annisyadira/capstone-project-sanctuary#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "regenerator-runtime": "^0.13.9"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "babel-loader": "^8.2.3",
-    "bootstrap": "^5.1.3",
-    "copy-webpack-plugin": "^10.0.0",
-    "css-loader": "^6.5.1",
-    "html-webpack-plugin": "^5.5.0",
-    "jquery": "^3.6.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0",
-    "webpack-merge": "^5.8.0"
-  }
+    "name": "capstone-project-sanctuary",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start-dev": "webpack-dev-server --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/annisyadira/capstone-project-sanctuary.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/annisyadira/capstone-project-sanctuary/issues"
+    },
+    "homepage": "https://github.com/annisyadira/capstone-project-sanctuary#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "regenerator-runtime": "^0.13.9"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.4",
+        "babel-loader": "^8.2.3",
+        "bootstrap": "^5.1.3",
+        "copy-webpack-plugin": "^10.0.0",
+        "css-loader": "^6.5.1",
+        "html-webpack-plugin": "^5.5.0",
+        "jquery": "^3.6.0",
+        "path": "^0.12.7",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.65.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^4.6.0",
+        "webpack-merge": "^5.8.0"
+    }
 }

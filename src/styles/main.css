@@ -398,17 +398,18 @@ p {
 #write-story {
     padding: 2%;
     margin: 0 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     background-color: rgba(255, 255, 255, 0.322);
 }
 #write-story > input {
     margin: 2% 0;
 }
 
-#addContent{
-    padding: 10% 1%;
-}
-
 .form-group {
     margin: 1% 0;
+}
+
+#beforeSubmit {
+    margin: 0 5%;
+    margin-bottom: 2%;
 }

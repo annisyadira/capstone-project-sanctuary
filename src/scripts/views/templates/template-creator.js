@@ -21,10 +21,14 @@ const createInputStory = () => `
             <input type="string" id='addTitle' class="form-control" placeholder="Judul" required>
         </div>
         <div class="form-group">
-            <input type="string" id='addContent' class="form-control" placeholder="Isi" required>
+            <textarea type="string" id='addContent' class="form-control" placeholder="Isi" required rows="10"></textarea>
         </div>
     </div>
-    <button type='submit' class='btn btn-warning btn-lg' id='submitBtn'>Bagikan</button>
+    <div id="beforeSubmit">
+        <input type="checkbox" id="req"></input>
+        <label for="req"><em>Cerita yang telah dibagikan akan tersedia untuk umum.</em></label>
+    </div>
+    <button type='submit' class='btn btn-warning btn-lg shareBtn' id='submitBtn'>Bagikan</button>
 `;
 
 const createSignIn = () => `
@@ -47,7 +51,7 @@ const createSignUp = () => `
         <h4>username</h4>
         <input type='string' class='form-control' id='usernameInput' placeholder='username' required>
         <h4>password</h4>
-        <input type='password' class='form-control' id='passwordInput' minlength='6' placeholder='minimal 6 karakter' required>
+        <input type='password' class='form-control' id='passwordInput' minlength='6' placeholder='password' required>
     </div>
     <h3 class='switch'>Sudah punya akun? <a href='#/signin'>Masuk!</a></h3>
     <button type='submit' class='btn btn-dark btn-lg' id='submitBtn'>Daftar</button>

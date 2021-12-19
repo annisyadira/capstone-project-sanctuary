@@ -39,35 +39,41 @@ const SignIn = {
         const passwordIndex = userData.findIndex(function(item, i){
             return item.password === passwordInput;
         });
-          
-
-        //cek username
-        if (userData.find((username) => { return username.username === usernameInput })) 
-        {
-            //cek password
-            if (userData.find((password) => { return password.password === passwordInput })) 
+        
+        //checking wether inputs are not empty
+        if (usernameInput != '' && passwordInput != '') {
+            //checking username duplicates
+            if (userData.find((username) => { return username.username === usernameInput })) 
             {
-                //cek kombinasi username & password
-                if (usernameIndex === passwordIndex)
+                //checking password duplicates
+                if (userData.find((password) => { return password.password === passwordInput })) 
                 {
-                    //assign user id ke local storage
-                    if (localStorage.getItem(UserSignedInKey) === null)
+                    //checking username & password combination
+                    if (usernameIndex === passwordIndex)
                     {
-                        const getId = [
-                            userData.at(usernameIndex).id_user
-                        ];
+                        //assignin user id to local storage
+                        if (localStorage.getItem(UserSignedInKey) === null)
+                        {
+                            const getId = [
+                                userData.at(usernameIndex).id_user
+                            ];
 
-                        localStorage.setItem(UserSignedInKey, getId)
-                        
-                        alert('Berhasil masuk!');
-                        location.replace('#/writestory');
+                            localStorage.setItem(UserSignedInKey, getId)
+                            
+                            alert('Berhasil masuk!');
+                            location.replace('/');
+                        }
                     }
                 }
             }
+            else {
+                alert('Password atau username salah. Coba lagi.');
+            }
         }
         else {
-            alert('Password atau username salah. Coba lagi.');
+            alert('Formulir tidak boleh kosong!')
         }
+
     }
 };
 
