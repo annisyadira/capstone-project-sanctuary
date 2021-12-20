@@ -160,6 +160,10 @@ section {
 }
 
 /*Locator*/
+#map {
+    width: 900px;
+    height: 500px;
+}
 
 /*Learn-more*/
 .learn-more .content h3 {
