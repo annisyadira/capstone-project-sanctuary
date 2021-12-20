@@ -22,8 +22,10 @@ const Locator = {
 		const hospitalPertamina = L.marker([-6.240434, 106.793332]).bindPopup('RS Pusat Pertamina <br> Rating: 4.0 ⭐⭐⭐⭐<br>Jam operasional: Setiaphari (24 jam)').addTo(places);
 		const pPesona = L.marker([-6.144066480997596, 106.53667608475351]).bindPopup('Biro Konsultasi Psikologi Pesona <br> Rating: 5.0 ⭐⭐⭐⭐⭐<br>Jam operasional:<br>Senin-Kamis (08.00-21.00)<br>Jumat-Sabtu (08.00-09.00)<br>Minggu (tutup)').addTo(places);
 		const pHaji = L.marker([-6.289527681356759, 106.88930758455315]).bindPopup('Haji Jakarta Hospital<br>Rating: 3.6 ⭐⭐⭐⭐<br>Jam Operasional: Setiaphari (24 jam)').addTo(places);
+        const psikiaterPolri = L.marker([-6.268059862098546, 106.87015122237328]).bindPopup('Instalasi Pelayanan Psikologi RS. Polri Kramat Jati<br>Rating: 4.8 ⭐⭐⭐⭐⭐<br>Jam Operasional:<br>Senin-Jumat (07.00-15.00)<br>Sabtu-Minggu (Tutup)').addTo(places);
 
-		const mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+		
+        const mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
 		const mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
 
 		const grayscale = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
