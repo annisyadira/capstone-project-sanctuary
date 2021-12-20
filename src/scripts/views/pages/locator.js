@@ -30,7 +30,7 @@ const Locator = {
 		const streets = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
 		const map = L.map('map', {
-			center: [-6.176908, 106.827106],
+		center: [-6.176908, 106.827106],
 			zoom: 12,
 			layers: [grayscale, places]
 		});
@@ -38,7 +38,7 @@ const Locator = {
 		const baseLayers = {
 			'Grayscale': grayscale,
 			'Streets': streets
-		};
+			};
 
 		const overlays = {
 			'Places': places
