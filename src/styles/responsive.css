@@ -12,6 +12,11 @@
         margin: 0 20%;
         margin-bottom: 10%;
     }
+
+    #maincontent {
+        margin: 0 8%;
+        margin-top: 6%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1390px) {
@@ -30,6 +35,11 @@
         padding-bottom: 4%;
     }
 
+    #maincontent {
+        margin: 0 8%;
+        margin-top: 8%;
+    }
+
     #team {
         margin: 0 7%;
         margin-bottom: 13%;
@@ -44,6 +54,11 @@
     #clear {
         width: 16.5%;
     }
+
+    #maincontent {
+        margin: 0 8%;
+        margin-top: 8%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1050px) {
@@ -54,6 +69,11 @@
     #team {
         margin: 0 5%;
         margin-bottom: 15%;
+    }
+    
+    #maincontent {
+        margin: 0 8%;
+        margin-top: 10%;
     }
 }
 
@@ -78,11 +98,6 @@
 }
 
 @media screen and (min-width: 992px) {
-    #maincontent {
-        margin: 0 8%;
-        margin-top: 10%;
-    }
-
     #hamburger {
         display: none;
     }
@@ -130,7 +145,7 @@
 
     #maincontent {
         margin: 0 5%;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     #sign-content {
@@ -202,7 +217,7 @@
 
     #maincontent {
         margin: 0 7%;
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     #hero h1 {
@@ -256,7 +271,7 @@
 
     #maincontent {
         margin: 0 3%;
-        margin-top: 22%;
+        margin-top: 18%;
     }
 
     #maincontent > p {
