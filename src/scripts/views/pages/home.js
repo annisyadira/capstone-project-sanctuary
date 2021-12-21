@@ -60,7 +60,7 @@ const Home = {
                                 dan sanyangi dirimu sendiri."
                             </p>
                             <center>
-                                <a href="" class="btn-go-to scrollto">Go to</a>
+                                <a href="#/article" class="btn-go-to scrollto">Go to</a>
                             </center>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const Home = {
                                 <br>Disini kamu dapat berbagi kisah bersama mereka. Melalui kisah yang kamu ceritakan bisa menjadi motivasi bagi mereka.
                             </p>
                             <center>
-                                <a href="" class="btn-go-to scrollto">Go to</a>
+                                <a href="#/story" class="btn-go-to scrollto">Go to</a>
                             </center>
                         </div>
                     </div>
