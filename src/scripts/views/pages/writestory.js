@@ -2,8 +2,7 @@
 import { createInputStory } from '../templates/template-creator';
 import data from '../../data/DATA.json';
 import SignInCheck from '../../utils/signInChecker';
-
-// const fs = require('fs');
+import { UserSignedInKey } from './signin'
 
 SignInCheck.init();
 
@@ -18,6 +17,16 @@ const WriteStory = {
         container.innerHTML = createInputStory();
 
         const submit = document.querySelector('#submitBtn');
+        const check = document.querySelector('#req');
+
+        check.addEventListener('change', function() {
+            if (check.checked == false) {
+                submit.disabled = true;
+            } else {
+                submit.disabled = false;
+            }            
+        })
+        
         submit.addEventListener('click', this.addNewStory);
     },
     async addNewStory() {
@@ -25,10 +34,10 @@ const WriteStory = {
         const content = document.querySelector('#addContent').value;
         
         const storyData = data[1].story;
-        const lastId = parseInt(storyData.at(-1).id_story);
-        const getUserId = localStorage.getItem(UserSignedInKey.id_user);
+        let lastId = parseInt(storyData.at(-1).id_story);
+        const getUserId = localStorage.getItem(UserSignedInKey);
         const date = new Date();
-        let dateCreated = date.toLocaleString();
+        const dateCreated = date.toLocaleString();
 
         const NewStory = {
             "id_story": `${lastId += 1}`,
@@ -38,18 +47,14 @@ const WriteStory = {
             "created_at": `${dateCreated}`
         }
 
-        // fs.readFile('../../data/DATA.json', 'utf8', (err, data) => {
-        //     if (err) {
-        //         throw err;
-        //     } else {
-        //         storyData = JSON.parse(data);
-        //         storyData.push(NewStory);
-        //         json = JSON.stringify(storyData); 
-        //         fs.writeFile('../../data/DATA.json', json, 'utf8', callback);
-        //     }
-        // })
-        
-        alert('Kisah berhasil ditambahkan!');
+        console.log(NewStory);
+
+        if (title == '' && content == '') {
+            alert('Formulir tidak boleh kosong!')
+        } else {
+            storyData.push(NewStory);
+            alert('Kisah berhasil ditambahkan!');
+        }
     }
 }
 

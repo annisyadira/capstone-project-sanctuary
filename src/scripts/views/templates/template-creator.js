@@ -28,7 +28,7 @@ const createInputStory = () => `
         <input type="checkbox" id="req"></input>
         <label for="req"><em>Cerita yang telah dibagikan akan tersedia untuk umum.</em></label>
     </div>
-    <button type='submit' class='btn btn-warning btn-lg shareBtn' id='submitBtn'>Bagikan</button>
+    <button type='submit' class='btn btn-warning btn-lg shareBtn' id='submitBtn' disabled>Bagikan</button>
 `;
 
 const createSignIn = () => `
